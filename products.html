@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+	<title>Browse Products</title>
+   
+   <!-- Predictive Web Collect Code -->
+   <script type="text/javascript" src="//7291498.collect.igodigital.com/collect.js"></script>
+
+	<script>
+	_etmc.push(["setOrgId", "7291498"]);
+	_etmc.push(["trackPageView"]);
+	</script>
+	
+	<script>
+	_etmc.push(["setOrgId", "7291498"]);
+	_etmc.push(["trackPageView", { "Category" : "eCommerce" }]);
+	</script>
+	
+	<script>
+	function ViewItem(sku){
+	_etmc.push(["setOrgId", "7291498"]);
+	_etmc.push(["trackPageView", { "item" : sku }]);
+	};
+   
+	function Add2Cart(sku){
+	_etmc.push(["setOrgId", "7291498"]);       
+	_etmc.push(["trackCart", { "cart": [
+	{"item" : sku, "quantity":  "1" , "price" : "1600" , "unique_id" : sku }
+   ]}]);
+	return false;
+}
+
+	</script>
+
+</head>
+
+
+<body>
+
+<h1>Product Catalog</h1>
+<br>
+
+<label for="SKU" class = "button1">SKU</label><input  id="SKU" maxlength="80" name="SKU" size="20" type="text" value="SAR8A80.FT6073"/><br>
+
+<button onclick="ViewItem(document.getElementById('SKU').value)" class="button">View Item</button><br>
+
+<button onclick="Add2Cart(document.getElementById('SKU').value)" class="button">Add 2 Cart</button><br>
+
+ <a href="http://lpetitguyot.github.io/buy.html" class="button">Buy</a><br>
+</body>
+</html>
+
+
+
+
