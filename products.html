@@ -2,6 +2,15 @@
 
 <head>
 
+<style>
+
+div.products {
+  float:left;
+}
+
+
+</style>
+
 	<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
 	<title>Browse Products</title>
@@ -43,11 +52,14 @@
 <h1>Product Catalog</h1>
 <br>
 
-<img width="150" src="https://www.tagheuer.com/sites/default/files/2016-09/Watches%20-%20SAR8A80.FT6073.png" onclick="ViewItem(SAR8A80.FT6073)"><br>
-SAR8A80.FT6073
-<img width="150" src="https://www.tagheuer.com/sites/default/files/2016-09/Watches%20-%20SAR8A80.BF0605.png" onclick="ViewItem(SAR8A80.FT6073)"><br>
-SAR8A80.BF0605
-
+<div class="products">
+	<img width="150" src="https://www.tagheuer.com/sites/default/files/2016-09/Watches%20-%20SAR8A80.FT6073.png" onclick="ViewItem(SAR8A80.FT6073)"><br>
+	SAR8A80.FT6073
+</div>
+<div class="products">
+	<img width="150" src="https://www.tagheuer.com/sites/default/files/2016-09/Watches%20-%20SAR8A80.BF0605.png" onclick="ViewItem(SAR8A80.FT6073)"><br>
+	SAR8A80.BF0605
+</div>
 <br>
 <button onclick="Add2Cart(document.getElementById('SKU').value)" class="button">Add 2 Cart</button><br>
 
